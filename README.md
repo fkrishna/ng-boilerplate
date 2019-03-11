@@ -2,7 +2,7 @@
 An Angular boilerplate with Uikit front-end framework to start my projects faster
 
 # Lazy Loading
-The boilerplate is configure to use lazy-loading, which means the module isn’t loaded before the user actually accesses the route.
+The boilerplate is configured to use lazy-loading, which means the module isn’t loaded before the user actually accesses the route.
 
 # Folder Structure
 ```
@@ -32,5 +32,5 @@ app.component.ts|html|scss|spec
     ...
 ```
 
-#The Shared Module
+# Shared Module
 The SharedModule is where any shared components, pipes/filters and services should go. The SharedModule can be imported in any other module when those items will be re-used. The shared module shouldn’t have any dependency to the rest of the application and should therefore not rely on any other module.
