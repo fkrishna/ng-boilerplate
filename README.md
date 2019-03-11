@@ -1,27 +1,36 @@
 # NgBoilerplate
+An Angular boilerplate with Uikit front-end framework to start my projects faster
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
+#Lazy Loading
+The boilerplate is configure to use lazy-loading, which means the module isn’t loaded before the user actually accesses the route.
 
-## Development server
+#Folder Structure
+```
+app.module.ts
+app-routing.module.ts
+app.component.ts|html|scss|spec
+...
+[-] modules
+    [-] Home
+        [+] components
+        [-] pages
+            home.component.ts|html|scss|spec
+        home-routing.module.ts
+        home.module.ts
+    [-] Module2
+        [+] components
+        [+] pages
+        module2.service.ts
+        module2.routing.module.ts
+        module2.module.ts
+[-] shared
+    [+] components
+    [+] mocks
+    [+] models
+    [+] pipes
+    shared.module.ts
+    ...
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#The Shared Module
+The SharedModule is where any shared components, pipes/filters and services should go. The SharedModule can be imported in any other module when those items will be re-used. The shared module shouldn’t have any dependency to the rest of the application and should therefore not rely on any other module.
