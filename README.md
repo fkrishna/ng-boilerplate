@@ -1,10 +1,10 @@
 # NgBoilerplate
 An Angular boilerplate with Uikit front-end framework to start my projects faster
 
-#Lazy Loading
+# Lazy Loading
 The boilerplate is configure to use lazy-loading, which means the module isn’t loaded before the user actually accesses the route.
 
-#Folder Structure
+# Folder Structure
 ```
 app.module.ts
 app-routing.module.ts
